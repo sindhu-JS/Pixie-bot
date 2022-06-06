@@ -1,6 +1,43 @@
-.box {
-    background-color: var(--surface-card);
-    text-align: center;
-    padding: 1rem;
-    border-radius: 4px;
+.about-container {
+    display: block;
+    background-image: url('/assets/about-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top -105px right;
+    height: 895px;
+    width:100%;
+    padding: 1.5em 4.5em;
+    .about-title {
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 2em;
+        margin-bottom: 1em;
+    }
+    .contet-wrapper {
+        text-align: center;
+        color: #a3663b;
+        width: 59%;
+        margin:0 auto;
+        font-size: 1.5rem;
+        line-height: 1.25;
+        margin-bottom: 1.5rem;
+        p {
+            margin-bottom: 2rem;
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        .contet-wrapper {
+            width: 100%;
+        }
+    }
+    @media only screen and (min-width: 769px) and (max-width: 959px) {
+        .contet-wrapper {
+            width: 100%;
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .about-container {
+        padding: 1.5em 3.5em;
+    }
 }

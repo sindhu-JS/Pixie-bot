@@ -1,4 +1,4 @@
-<header class="main-header" role="banner">
+<!-- <header class="main-header" role="banner">
    <div class="logo">
       <a>Logo</a>
    </div>
@@ -11,4 +11,36 @@
          <li><a [routerLink]="['/main/contacts']" [routerLinkActive]="['active']">Contacts</a></li>
       </ul>
    </nav>
-</header>
+</header> -->
+
+<header class="main-header" role="banner">
+   <div class="logo"><a href="/"><img src="/assets/logo.png" alt="ThePixieBot Design Studio - Logo"></a></div>
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+   integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+   integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+   crossorigin=""></script>
+   <nav class="nav-bar" role="navigation">
+     <ul class="main-nav">
+      <li><a [routerLink]="['/main/home']" [routerLinkActive]="['active']">Home</a></li>
+      <li><a [routerLink]="['/main/service']" [routerLinkActive]="['active']">Services</a></li>
+      <li><a [routerLink]="['/main/about']" [routerLinkActive]="['active']">About</a></li>
+      <li><a [routerLink]="['/main/work']" [routerLinkActive]="['active']">Work</a></li>
+      <li><a [routerLink]="['/main/contacts']" [routerLinkActive]="['active']">Contacts</a></li>
+     </ul>
+   </nav>
+   <div id="hamburger-icon" (click)="toggleMobileMenu()">
+      <!-- <i class="pi pi-bars"></i> -->
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <ul class="mobile-menu">
+         <li><a [routerLink]="['/main/home']" [routerLinkActive]="['active']">Home</a></li>
+         <li><a [routerLink]="['/main/service']" [routerLinkActive]="['active']">Services</a></li>
+         <li><a [routerLink]="['/main/about']" [routerLinkActive]="['active']">About</a></li>
+         <li><a [routerLink]="['/main/work']" [routerLinkActive]="['active']">Work</a></li>
+         <li><a [routerLink]="['/main/contacts']" [routerLinkActive]="['active']">Contacts</a></li>
+      </ul>
+   </div>
+ </header>

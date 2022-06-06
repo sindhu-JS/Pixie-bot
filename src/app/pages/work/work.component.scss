@@ -1,0 +1,26 @@
+.work-container {
+    display: block;
+    background-image: url('/assets/about-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top -105px right;
+    height: 895px;
+    width:100%;
+    padding: 1.5em 4.5em;
+    h1 {
+        text-align: center;
+        margin-top: 2em;
+        text-transform: capitalize;
+        margin-bottom: 1em;
+    }
+    .desc {
+        text-align: center;
+        margin: 0 auto;
+        color: #a3663b;
+        width: 59%;
+        margin:0 auto;
+        font-size: 1.5rem;
+        line-height: 1.25;
+        margin-bottom: 1.5rem;
+    }
+}

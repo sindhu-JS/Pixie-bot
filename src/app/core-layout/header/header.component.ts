@@ -11,5 +11,14 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  toggleMobileMenu():void {
+    console.log("toggleMobileMenu");
+    const hamburger = document.getElementById('hamburger-icon');
 
+    if (hamburger != null) {
+      hamburger.classList.toggle('open');
+    }
+    
+    //menu.classList.toggle('open');
+}
 }

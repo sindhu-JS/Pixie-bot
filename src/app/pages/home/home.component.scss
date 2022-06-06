@@ -1,0 +1,39 @@
+.main-content {
+    display: block;
+    background-image: url('/assets/home-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top -105px right;
+    height: 895px;
+    width:100%;
+    padding: 1.5em 4.5em;
+    .main-content-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3em;
+        .content {
+            width: 21.85%;
+            h1 {
+                width: 302px;
+                color: #cc6600;
+                font-weight: normal;
+                line-height: 1.2;
+            }
+            p {
+                margin: 50px 0;
+            }
+        }
+        .img-container {
+            margin-top: 20px;
+            text-align: center;
+            color: #7b4208;
+            font-size: 1.4rem;
+            .desc {
+                width: 350px;
+                margin: 20px auto;
+                line-height: 1.2;
+            }
+        }
+    }
+    
+}

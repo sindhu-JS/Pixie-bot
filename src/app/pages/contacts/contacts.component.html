@@ -1,42 +1,50 @@
-<h1>Contacts page!</h1>
+<main class="contact-container">
+    <h1>Get in touch</h1>
+    <div class="contact-content">
+        <p>We would love to hear from you! Let's have a coffee or reach us on PixieBotStudios@gmail.com</p>
+        <p>Send us a message below, or give us a call - (123)-456-7890</p>
+    </div>
+    <section class="content-wrapper">
+        <div class="address-wrapper col-12 md:col-6 xl:col-6">
+            <div class="address">
+                <h2>Address</h2>
+                <p>Pixie Bot Studio<br/>Dublin, CA <br/>94568 USA</p>
+                <p>(123)-456-7890</p>
+            </div>
+            <div class="map md:col-5 xl:col-3" id="map">
+                <p-gmap [options]="options" [style]="{'width':'100%','height':'320px'}" ></p-gmap>
 
-<p-panel >
-    <ng-template pTemplate="header">
-        Header content here
-    </ng-template>
-        <div class="formgrid grid">
-            <div class="field col-12 md:col-6">
-                <label for="firstname6">Firstname</label>
-                <input id="firstname6" type="text" pInputText  class="inputfield w-full">
-            </div>
-            <div class="field col-12 md:col-6">
-                <label for="lastname6">Lastname</label>
-                <input id="lastname6" type="text" pInputText  class="inputfield w-full">
-            </div>
-            <div class="field col-12">
-                <label for="address">Address</label>
-                <textarea id="address" type="text" rows="4" pInputText  class="inputfield w-full"></textarea>
-            </div>
-            <div class="field col-12 md:col-6">
-                <label for="city">City</label>
-                <input id="city" type="text" pInputText  class="inputfield w-full">
-            </div>
-            <div class="field col-12 md:col-3">
-                <label for="state">State</label>
-                <select id="state" class="w-full inputfield" pInputText style="appearance: auto">
-                    <option>Arizona</option>
-                    <option>California</option>
-                    <option>Florida</option>
-                    <option>Ohio</option>
-                    <option>Washington</option>
-                </select>
-            </div>
-            <div class="field col-12 md:col-3">
-                <label for="zip">Zip</label>
-                <input id="zip" type="text" pInputText  class="inputfield w-full">
             </div>
         </div>
-    <ng-template pTemplate="footer">
-        Footer content here
-    </ng-template>
-</p-panel>
+        <div class="contact-form col-12 md:col-12 xl:col-6">
+            <h2>Ask Questions</h2>
+            <div class="formgrid grid">
+                <div class="field col-12 md:col-6">
+                    <label for="Name">Name</label>
+                    <input id="Name" type="text" pInputText  class="inputfield w-full">
+                </div>
+                <div class="field col-12 md:col-6">
+                    <label for="service">Services</label>
+                    <select id="service" class="w-full inputfield" pInputText style="appearance: auto">
+                        <option>Arizona</option>
+                        <option>California</option>
+                        <option>Florida</option>
+                        <option>Ohio</option>
+                        <option>Washington</option>
+                    </select>
+                </div>
+                <div class="field col-12 md:col-12">
+                    <label for="email">Email</label>
+                    <input id="email" type="text" pInputText required class="inputfield w-full">
+                </div>
+                <div class="field col-12 md:col-12">
+                    <label for="message">Message</label>
+                    <textarea id="message" type="text" rows="4" pInputText  class="inputfield w-full"></textarea>
+                </div>
+                <div class="field col-4">
+                    <button class="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

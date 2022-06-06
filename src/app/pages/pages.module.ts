@@ -16,6 +16,8 @@ import {GalleriaModule} from 'primeng/galleria';
 import {PanelModule} from 'primeng/panel';
 import {MenubarModule} from 'primeng/menubar';
 import {MenuItem} from 'primeng/api';
+import {GMapModule} from 'primeng/gmap';
+import {ButtonModule} from 'primeng/button';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import {MenuItem} from 'primeng/api';
     GalleriaModule,
     InputTextModule,
     PanelModule,
-    MenubarModule
+    MenubarModule,
+    GMapModule,
+    ButtonModule
   ],
 })
 export class PagesModule { }
