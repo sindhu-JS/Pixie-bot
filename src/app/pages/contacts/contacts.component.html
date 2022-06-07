@@ -5,25 +5,24 @@
         <p>Send us a message below, or give us a call - (123)-456-7890</p>
     </div>
     <section class="content-wrapper">
-        <div class="address-wrapper col-12 md:col-6 xl:col-6">
+        <div class="address-wrapper col-12 md:col-6 xl:col-4">
             <div class="address">
                 <h2>Address</h2>
                 <p>Pixie Bot Studio<br/>Dublin, CA <br/>94568 USA</p>
                 <p>(123)-456-7890</p>
             </div>
-            <div class="map md:col-5 xl:col-3" id="map">
+            <!-- <div class="map md:col-5 xl:col-3" id="map">
                 <p-gmap [options]="options" [style]="{'width':'100%','height':'320px'}" ></p-gmap>
-
-            </div>
+            </div> -->
         </div>
-        <div class="contact-form col-12 md:col-12 xl:col-6">
+        <div class="contact-form col-12 md:col-12 xl:col-8">
             <h2>Ask Questions</h2>
             <div class="formgrid grid">
-                <div class="field col-12 md:col-6">
+                <div class="field col-12 md:col-6 xl:col-6">
                     <label for="Name">Name</label>
                     <input id="Name" type="text" pInputText  class="inputfield w-full">
                 </div>
-                <div class="field col-12 md:col-6">
+                <div class="field col-12 md:col-6 xl:col-6">
                     <label for="service">Services</label>
                     <select id="service" class="w-full inputfield" pInputText style="appearance: auto">
                         <option>Arizona</option>
@@ -33,15 +32,16 @@
                         <option>Washington</option>
                     </select>
                 </div>
-                <div class="field col-12 md:col-12">
+                
+                <div class="field col-12 md:col-12 xl:col-8">
                     <label for="email">Email</label>
                     <input id="email" type="text" pInputText required class="inputfield w-full">
                 </div>
-                <div class="field col-12 md:col-12">
+                <div class="field col-12 md:col-12 xl:col-8">
                     <label for="message">Message</label>
                     <textarea id="message" type="text" rows="4" pInputText  class="inputfield w-full"></textarea>
                 </div>
-                <div class="field col-4">
+                <div class="field col-4 md:col-12 xl:col-8">
                     <button class="submit">Submit</button>
                 </div>
             </div>

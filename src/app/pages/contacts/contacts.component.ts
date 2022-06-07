@@ -19,12 +19,12 @@ export class ContactsComponent implements OnInit {
       zoom: 12
     };*/
 
-  this.map = L.map('map').setView([51.505, -0.09], 13);
+  /*this.map = L.map('map').setView([51.505, -0.09], 13);
 
   this.tiles  = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		maxZoom: 19,
 		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-	}).addTo(this.map);
+	}).addTo(this.map);*/
 	 
 
 

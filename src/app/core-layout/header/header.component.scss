@@ -7,7 +7,7 @@
   background-color: #f1ede8;
   max-width: 100%;
   padding: 1rem 4rem;
-  position: fixed;
+  // position: fixed;
   width: 100%;
   z-index: 100;
   .nav-bar {
@@ -43,13 +43,13 @@
 }
 #hamburger-icon {
   margin: auto 0;
-  // display: none;
+  display: none;
   cursor: pointer;
 }
 #hamburger-icon div {
   width: 35px;
   height: 3px;
-  background-color: white;
+  background-color: #a3663b;
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -61,10 +61,21 @@
   left: 0;
   height: calc(100vh - 50px);
   width: 100%;
-  background-color: beige;
+  background-color: #e6d1b6;
   padding-top: 2rem;
   li {
-    margin-bottom: 10px;
+    a {
+      text-align: center;
+      padding: 1.4rem 3rem;
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: #343434;
+      white-space: nowrap;
+      cursor: hand;
+      &.active {
+        color: #cc6600;
+      }
+    }
   }
 }
 
