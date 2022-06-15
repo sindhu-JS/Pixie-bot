@@ -1,0 +1,80 @@
+.service-container {
+    display: block;
+    background-image: url('/assets/contact-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top -105px right;
+    height: 895px;
+    width:100%;
+    padding: 2.5em 4.5em;
+    h1 {
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 2rem;
+    }
+    .desc {
+        margin: 0 auto;
+        text-align: center;
+        color: #ae5b08;
+        font-size: 1.3rem;
+        .sub-content {
+            width: 44%;
+            text-align: center;
+            margin: 2rem auto;
+            line-height: 1.5;
+        }
+    }
+    .services-list-wrapper {
+        display: flex;
+        justify-content: center;
+        .card-container {
+            margin: 0.5rem;
+            background-color: #cdcbcc;
+            height: auto;
+            padding: 0.5rem 0;
+            border-radius: 6px;
+            box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
+            .p-card {
+                background: #cdcbcc;
+                border-radius: 0;
+                box-shadow: none;
+                .research-img {
+                    text-align: center;
+                }
+                .card-body {
+                    color: #000;
+                    width: 300px;
+                    .card-title {
+                        text-transform: uppercase;
+                        letter-spacing: 1.5px;
+                        font-size: 2rem;
+                        text-align: center;
+                    }
+                    .card-content {
+                        margin-top: 1rem;
+                    }
+                }
+                .p-card-body {
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+    @media only screen and (min-width: 769px) and (max-width: 959px) {
+        
+    }
+}
+@media only screen and (max-width: 768px) {
+    .service-container {
+        padding: 2.5em 3.5em;
+        .desc .sub-content {
+            width: 100%;
+        }
+        .services-list-wrapper {
+            flex-direction: column;
+            .card-container .p-card .card-body {
+                width: 100%;
+            }
+        }
+    }
+}

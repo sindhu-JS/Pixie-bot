@@ -18,6 +18,8 @@ import {MenubarModule} from 'primeng/menubar';
 import {MenuItem} from 'primeng/api';
 import {GMapModule} from 'primeng/gmap';
 import {ButtonModule} from 'primeng/button';
+import {ImageModule} from 'primeng/image';
+import {CardModule} from 'primeng/card';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import {ButtonModule} from 'primeng/button';
     PanelModule,
     MenubarModule,
     GMapModule,
-    ButtonModule
+    ButtonModule,
+    ImageModule,
+    CardModule
   ],
 })
 export class PagesModule { }
