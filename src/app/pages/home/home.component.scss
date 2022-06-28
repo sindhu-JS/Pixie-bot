@@ -8,19 +8,34 @@
     width:100%;
     padding: 1.5em 4.5em;
     .main-content-container {
-        display: flex;
-        justify-content: space-between;
         margin-top: 3em;
         .content {
-            width: 21.85%;
+            width: 100%;
+            text-align: center;
+            margin: 0 auto;
             h1 {
-                width: 302px;
                 color: #cc6600;
                 font-weight: normal;
                 line-height: 1.2;
             }
             p {
-                margin: 50px 0;
+                margin: 50px auto;
+                font-size: 1.5rem;
+                width: 75%;
+            }
+        }
+        .product-item {
+            .product-item-content {
+                border: 1px solid var(--surface-d);
+                border-radius: 3px;
+                margin: .3rem;
+                text-align: center;
+                padding: 2rem 0;
+            }
+        
+            .product-image {
+                width: 50%;
+                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)
             }
         }
         .img-container {

@@ -6,10 +6,22 @@
                 solutions for the mobile and the web devices. Our work helps clients to spread their business value and also analyze user behaviour
                  for measurable engagement and further strategies.</p>
         </div>
-        <div class="img-container">
+        <img src="/assets/1.png" [alt]=" " class="product-image" width="560" height="500"/>
+        <!-- <div class="img-container">
             <img src="../../../assets/wireframe.png" alt="responsive wireframe layouts" width="723" height="413">
             <div class="desc">Responsive Web & Mobile Design Digital Design </div>
-        </div>
+        </div> -->
+        <p-carousel styleClass="custom-carousel" [numVisible]="3" [numScroll]="1" [circular]="true" [autoplayInterval]="3000">
+            <ng-template pTemplate="item">
+                <div class="product-item">
+                    <div class="product-item-content">
+                        <div class="mb-3">
+                            <img src="/assets/1.jpg" [alt]=" " class="product-image" />
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+        </p-carousel>
     </div>  
 </main>
 

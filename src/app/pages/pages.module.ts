@@ -20,6 +20,7 @@ import {GMapModule} from 'primeng/gmap';
 import {ButtonModule} from 'primeng/button';
 import {ImageModule} from 'primeng/image';
 import {CardModule} from 'primeng/card';
+import {CarouselModule} from 'primeng/carousel';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import {CardModule} from 'primeng/card';
     GMapModule,
     ButtonModule,
     ImageModule,
-    CardModule
+    CardModule,
+    CarouselModule
   ],
 })
 export class PagesModule { }

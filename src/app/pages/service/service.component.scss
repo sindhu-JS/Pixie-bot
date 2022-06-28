@@ -27,8 +27,10 @@
     .services-list-wrapper {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         .card-container {
             margin: 0.5rem;
+            margin-bottom: 8rem;
             background-color: #cdcbcc;
             height: auto;
             padding: 0.5rem 0;
@@ -60,9 +62,6 @@
             }
         }
     }
-    @media only screen and (min-width: 769px) and (max-width: 959px) {
-        
-    }
 }
 @media only screen and (max-width: 768px) {
     .service-container {
@@ -78,6 +77,27 @@
                     font-size: 1.75rem;
                 }
             }
+        }
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 959px) {
+    .service-container {
+        padding: 2.5em 3.5em;
+        .desc .sub-content {
+            width: 100%;
+        }
+        .services-list-wrapper {
+            flex-direction: row;
+            flex-wrap: wrap;
+            .card-container {
+                width: 45%;
+                .p-card .card-body {
+                    width: 100%;
+                    .card-title {
+                        font-size: 1.75rem;
+                    }
+                }
+            } 
         }
     }
 }
