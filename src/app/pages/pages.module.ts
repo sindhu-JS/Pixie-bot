@@ -21,6 +21,7 @@ import {ButtonModule} from 'primeng/button';
 import {ImageModule} from 'primeng/image';
 import {CardModule} from 'primeng/card';
 import {CarouselModule} from 'primeng/carousel';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import {CarouselModule} from 'primeng/carousel';
     ButtonModule,
     ImageModule,
     CardModule,
-    CarouselModule
+    CarouselModule,
+    HttpClientModule
   ],
 })
 export class PagesModule { }

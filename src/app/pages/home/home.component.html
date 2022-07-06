@@ -11,12 +11,12 @@
             <img src="../../../assets/wireframe.png" alt="responsive wireframe layouts" width="723" height="413">
             <div class="desc">Responsive Web & Mobile Design Digital Design </div>
         </div> -->
-        <p-carousel styleClass="custom-carousel" [numVisible]="3" [numScroll]="1" [circular]="true" [autoplayInterval]="3000">
-            <ng-template pTemplate="item">
+        <p-carousel styleClass="custom-carousel" [numVisible]="3" [numScroll]="1" [circular]="true" [autoplayInterval]="3000" [responsiveOptions]="responsiveOptions">
+            <ng-template let-design pTemplate="item">
                 <div class="product-item">
                     <div class="product-item-content">
                         <div class="mb-3">
-                            <img src="/assets/1.jpg" [alt]=" " class="product-image" />
+                           
                         </div>
                     </div>
                 </div>
