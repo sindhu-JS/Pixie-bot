@@ -4,6 +4,7 @@ import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreLayoutModule } from './core-layout/core-layout.module';
+import { DesignService } from './pages/home/designservice';
 import { PagesModule } from './pages/pages.module';
 
 @NgModule({
@@ -17,7 +18,7 @@ import { PagesModule } from './pages/pages.module';
     PagesModule,
     LeafletModule
   ],
-  providers: [],
+  providers: [DesignService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
