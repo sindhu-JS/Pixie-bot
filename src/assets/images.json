@@ -1,16 +1,19 @@
 {
     "data": [
       {
-        "name": "Bamboo Watch",
-        "image": "2.jpg"
+        "title": "UX-UI Branding Design Agency",
+        "text": "Our UX - UI design solutions at PixieBot is driven by Design thinking. We believe in creating intuitive, innovative and user-friendly solutions for the mobile and the web devices.",
+        "image": "responsive.png"
       },
       {
-        "name": "Black Watch",
-        "image": "3.jpg"
+        "title": "We'll help manage your business",
+        "text": "Our UX designer focuses on the customers. It revolves around understanding them and their motivations,desires,emotions,goals,and their actions.",
+        "image": "business.png"
       },
       {
-        "name": "Bracelet",
-        "image": "1.jpg"
+        "title": "UX-UI ANALYTICS",
+        "text": "UX & UI designers will measure and analysis user activity on your website or app that provides insights into how its design can be adapted to met the current or changing needs of end users.",
+        "image": "analytics.png"
       }
     ]
   }

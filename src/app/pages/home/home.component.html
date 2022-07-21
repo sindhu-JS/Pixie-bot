@@ -1,23 +1,20 @@
 <main class="main-content" role="main">
     <div class="main-content-container">
-        <div class="content">
-            <h1>UX-UI Branding Design Agency</h1>
-            <p>Our UX - UI design solutions at PixieBot is driven by Design thinking. We believe in creating intuitive, innovative and user-friendly 
-                solutions for the mobile and the web devices. Our work helps clients to spread their business value and also analyze user behaviour
-                 for measurable engagement and further strategies.</p>
-        </div>
         <!-- <img src="/assets/1.png" [alt]=" " class="product-image" width="560" height="500"/> -->
         <!-- <div class="img-container">
             <img src="../../../assets/wireframe.png" alt="responsive wireframe layouts" width="723" height="413">
             <div class="desc">Responsive Web & Mobile Design Digital Design </div>
         </div> -->
-        <p-carousel styleClass="custom-carousel" [value]="design" [numVisible]="3" [numScroll]="1" [circular]="true" [autoplayInterval]="3000" [responsiveOptions]="responsiveOptions">
+        <p-carousel styleClass="custom-carousel" [value]="design" [numVisible]="1" [numScroll]="1" [circular]="true" [responsiveOptions]="responsiveOptions">
             <ng-template let-design pTemplate="item">
-                <div class="product-item">
-                    <div class="product-item-content">
-                        <div class="mb-3">
-                           <img src="/assets/{{design.image}}" width="300px"/>
-                           <h3>{{design.name}}</h3>
+                <div class="mb-3">
+                    <div class="grid">
+                        <div class="col-12 md:col-12 lg:col-6 content">
+                            <h1>{{design.title}}</h1>
+                            <p>{{design.text}}</p>
+                        </div>
+                        <div class="col-12 md:col-12 lg:col-6 img-container">
+                            <img src="/assets/{{design.image}}" width="700px"/>
                         </div>
                     </div>
                 </div>
